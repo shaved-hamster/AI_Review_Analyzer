@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.form-section,
+.results-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.form-section p {
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 170px;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stat-card {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #eff6ff;
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.positive {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.negative {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.neutral {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+}
+
+.positive-text {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.negative-text {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.neutral-text {
+    color: #64748b;
+    font-weight: bold;
+}
+
+.chart-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 650px) {
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
